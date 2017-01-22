@@ -1,0 +1,14 @@
+{
+  "ids": {
+    "User": 1,
+    "AccessToken": 4
+  },
+  "models": {
+    "User": {},
+    "AccessToken": {
+      "2oZN9Do0UaTPEruLKoZ2eRKqhnwZyn9Py7Qi0XKEeYKL1X2BE1jH7OU980DkdQuf": "{\"id\":\"2oZN9Do0UaTPEruLKoZ2eRKqhnwZyn9Py7Qi0XKEeYKL1X2BE1jH7OU980DkdQuf\",\"ttl\":1209600,\"created\":\"2017-01-15T00:12:14.724Z\",\"userId\":\"854c9b9e6c8039aa7f282d46a6755683\"}",
+      "knFkmEP1tDZXD9Wf4qiKrkcJeowyAz7JF0b8H1TVs5BlVOUdxaAQxDvSU1A2hU3u": "{\"id\":\"knFkmEP1tDZXD9Wf4qiKrkcJeowyAz7JF0b8H1TVs5BlVOUdxaAQxDvSU1A2hU3u\",\"ttl\":1209600,\"created\":\"2017-01-15T01:29:07.648Z\",\"userId\":\"854c9b9e6c8039aa7f282d46a6755683\"}",
+      "JmVj80JImF4uJoOZbm04d6pXVYtMuy2mPKrl9S9ZWhGITEV2WhSQY1RI1F9WONrU": "{\"id\":\"JmVj80JImF4uJoOZbm04d6pXVYtMuy2mPKrl9S9ZWhGITEV2WhSQY1RI1F9WONrU\",\"ttl\":1209600,\"created\":\"2017-01-15T21:30:16.780Z\",\"userId\":\"854c9b9e6c8039aa7f282d46a6755683\"}"
+    }
+  }
+}

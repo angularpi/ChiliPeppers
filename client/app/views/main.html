@@ -1,0 +1,61 @@
+<div class="container">
+
+    <div class="media" ng-repeat = "chili in chilis" ng-model="chili">
+
+      <div class="media-left">
+        <img class="media-object" src={{chili.image}} alt={{chili.name}}>
+      </div>
+
+      <div class="media-body">
+        <div class="row">
+
+          <div class="col-md-10">
+
+            <h2 class="media-heading">{{chili.name}}</h2>
+
+            <span ng-controller="chiliDesctiptionCtrl">
+              <button ng-click="toggleDescription()" class="btn btn-xs btn-primary" type="button">{{showDescription ? 'Hide Description':'Show Description'}}</button>
+              <p ng-show = "showDescription">{{chili.description}}</p>
+            </span>
+
+            <span ng-controller="commentCtrl">
+              <button ng-click="toggleComments()" class="btn btn-xs btn-primary" type="button">{{showComments ? 'Hide Recipes':'Show Recipes'}}</button>
+              <div class="row" ng-repeat = "comment in chiliComments" ng-show = "showComments">
+                <br>
+                <div class="col-sm-11">
+                  <p >{{comment.comment}}</p>
+                </div>
+                <div class="col-sm-1">
+                  <button ng-click="deleteComment(comment.id)" class="btn btn-xs btn-danger" type="button">X</button>
+                </div>
+              </div>
+
+              <form class="form-horizontal col-sm-12", name="commentForm" ng-submit="submitComment()" novalidate ng-show="showForm">
+                <br>
+
+                <div>
+                  <label for="newComment">New Recipe</label>
+                </div>
+
+                <div>
+                  <textarea rows="6" name="newComments" ng-model="newComment" required style="width:100%"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-default pull-right">Submit</button>
+
+              </form>
+
+            </span>
+
+          </div>
+
+          <div class="col-md-2  hidden-xs">
+            <span class="label label-danger pull-right">Scale: {{chili.scale}}</span>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+</div>
+<br>
